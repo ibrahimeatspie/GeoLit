@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+</style>
+<meta charset="utf-8">
+<title>Display a map on a webpage</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+
+<style>
+  body { margin: 0; padding: 0; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  .marker {
+    background-image: url('assets/2025339-200.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+</style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>     
+  
+  
+  
+
+  <div id="submitLocationForm">
+
+    <div>
+      <input id="inputLoc" placeholder="Enter long,lat"><button id="submitLoc" onclick="addLocation()">Submit</button>
+         
+
+    </div>
+     <button id="fetchLatLong">🗑️ spotted here</button> 
+
+  </div>
+    <div id="map"></div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

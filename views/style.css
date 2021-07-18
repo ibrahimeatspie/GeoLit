@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;    box-sizing: border-box;
+
+}
+
+input{
+  margin:0;
+  padding:0;
+    box-sizing: border-box;
+
+}
+
+button{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+input[type="button"]{
+  font-family: 'Lato';
+}
+input{
+
+
+
+}
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight:500;
+  display:flex;
+  justify-content:center;
+  
+  }
+
+/*#test{
+  position: absolute;
+  z-index:20;
+  width:5vw;
+  height:auto;
+
+}
+#inputLoc{
+
+  position: absolute;
+  z-index:20;
+  width:5vw;
+}
+*/
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+
+#submitLocationForm{
+  display:flex;
+  flex-direction:column;
+  position: absolute;
+  z-index:20;
+  bottom:5vh;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+
+
+#inputLoc{
+  text-align:center;
+font-family: 'Lato', sans-serif;
+  width:10vw;
+  height:5vh;
+  border-style: solid;
+    border-width: 10px;
+    border-image-source: linear-gradient(to left, #3af296, #20c974);
+    border-image-slice: 3;
+ vertical-align: top;
+ min-width:138px;
+    background-color:white;
+
+    
+    
+
+}
+
+
+#submitLoc{
+  color:gray;
+  text-align:center;
+font-family: 'Lato', sans-serif;
+  font-weight:500;
+  width:5vw;
+  height:5vh;
+  border-style: solid;
+    border-width: 10px;
+    border-image-source: linear-gradient(to right, #3af296, #20c974);
+    border-image-slice: 3;
+     background-color:white;
+
+min-width:100px;
+}
+
+#fetchLatLong{
+  color:gray;
+  text-align:center;
+font-family: 'Lato', sans-serif;
+  font-weight:500;
+  width:15vw;
+  height:5vh;
+  border-top:none;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, #20c974, #20c974);
+    border-image-slice: 3;
+    min-width:238px;
+    background-color:white;
+}
+
+@media only screen and (max-width: 1336px) {
+
+  #inputLoc{
+    width:12vw;
+  }
+  #submitLoc{
+    width:7vw;
+  }
+  #fetchLatLong{
+
+    width:19vw;
+   /*what do you want do here?*/
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #inputLoc{
+    width:14vw;
+  }
+  #submitLoc{
+    width:9vw;
+  }
+  #fetchLatLong{
+
+    width:23vw;
+   /*what do you want do here?*/
+  }
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  #inputLoc{
+    width:18vw;
+  }
+  #submitLoc{
+    width:13vw;
+  }
+  #fetchLatLong{
+
+    width:31vw;
+   /*what do you want do here?*/
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  #inputLoc{
+    width:21vw;
+  }
+  #submitLoc{
+    width:16vw;
+  }
+  #fetchLatLong{
+
+    width:37vw;
+   /*what do you want do here?*/
+  }
+
+  input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 3;
+}
+
+}
